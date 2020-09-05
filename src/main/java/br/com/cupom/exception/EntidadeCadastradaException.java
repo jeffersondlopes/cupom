@@ -2,10 +2,10 @@ package br.com.cupom.exception;
 
 public class EntidadeCadastradaException extends RuntimeException {
 
-    public static final String MSG = "Produto de código EAN %d já está cadastrado";
+    public static final String MSG = "Entidade de código %d já está cadastrado";
 
-    public EntidadeCadastradaException(Long ean){
-        super(String.format(MSG,ean));
+    public EntidadeCadastradaException(Long codigo){
+        super(String.format(MSG,codigo));
     }
 
 }

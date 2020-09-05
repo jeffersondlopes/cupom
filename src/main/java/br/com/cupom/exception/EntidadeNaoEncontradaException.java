@@ -1,10 +1,10 @@
 package br.com.cupom.exception;
 
-public class ProdutoNaoEncontradoException extends RuntimeException {
+public class EntidadeNaoEncontradaException extends RuntimeException {
 
     public static final String MSG = "Produto de código EAN %d não encontrado";
 
-    public ProdutoNaoEncontradoException(Long ean){
+    public EntidadeNaoEncontradaException(Long ean){
         super(String.format(MSG,ean));
     }
 
